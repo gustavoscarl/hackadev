@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Code Busters Health</title>
+  </head>
+  <body>
+    <header class="health-header">
+      <div class="logo-container">
+        <img src="CODEBUSTERS.jpeg" alt="Logo da Code Busters" />
+      </div>
+      <h1>CODE BUSTERS HEALTH</h1>
+
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+          <li><a href="#">Fale Comigo</a></li>
+          <li><a href="#">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="api-section">
+        <h2>Fale Comigo agora mesmo</h2>
+        <button id="callApiButton">Clique Aqui</button>
+        <div id="apiResult"></div>
+      </section>
+
+      <section class="signup-section">
+        <h2>Cadastre-se para Atendimento</h2>
+        <form id="signupForm">
+          <label for="fullName">Nome Completo:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+        <div id="successMessage" style="display: none">
+          <p>Cadastro realizado com sucesso! Entraremos em contato em breve.</p>
+        </div>
+      </section>
+
+      <section class="service-description">
+        <h2>Atendimento para Ansiedade</h2>
+        <p>
+          Nosso serviço de atendimento visa ajudar pessoas que sofrem de
+          ansiedade. Oferecemos suporte profissional para lidar com os desafios
+          emocionais e mentais associados à ansiedade.
+        </p>
+      </section>
+
+      <section class="testimonials-section">
+        <h2>Depoimentos</h2>
+        <!-- Adicione depoimentos aqui, se desejar -->
+      </section>
+
+      <section class="contact-section">
+        <h2>Entre em Contato</h2>
+        <p>
+          Se precisar de mais informações ou tiver dúvidas, entre em contato
+          conosco.
+        </p>
+        <!-- Adicione informações de contato aqui, como e-mail ou número de telefone -->
+      </section>
+    </main>
+
+    <!-- Outro conteúdo da página pode ser adicionado aqui -->
+
+    <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Impede o envio padrão do formulário
+
+          // Adicione aqui a lógica para processar os dados do formulário, enviar para o servidor, etc.
+          // Por enquanto, apenas exibiremos os dados no console para fins de demonstração.
+
+          var formData = new FormData(event.target);
+          console.log("Dados do formulário:", formData);
+
+          // Exibindo mensagem de sucesso
+          document.getElementById("signupForm").style.display = "none";
+          document.getElementById("successMessage").style.display = "block";
+        });
+    </script>
+  </body>
+</html>

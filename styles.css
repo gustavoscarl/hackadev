@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://img.freepik.com/vetores-gratis/mundo-medico-e-saude-fundo-azul-com-espaco-de-texto_1017-26087.jpg");
+    color: #fff;
+}
+
+.health-header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.api-section,
+.signup-section,
+.service-description,
+.testimonials-section,
+.contact-section {
+    margin-bottom: 30px;
+}
+
+.signup-section form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.signup-section label {
+    font-weight: bold;
+}
+
+.signup-section input,
+.signup-section button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Adiciona uma borda de 1px sólida e cinza */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+.successMessage {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.service-description,
+.testimonials-section,
+.contact-section {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
