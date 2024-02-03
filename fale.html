@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>ChatGPT API Test</h1>
+    <h1>Converse com nossa I.A amigável</h1>
     <input type="text" id="userInput" placeholder="Digite sua pergunta aqui...">
     <button onclick="sendToChatGPT()">Enviar</button>
     <p>Resposta: <span id="chatGPTResponse">Nenhuma resposta ainda...</span></p>
@@ -45,6 +45,7 @@
 
             const data = await response.json();
             console.log(data.choices[0].message.content)
+            userInput.value = ''
             responseField.innerText = data.choices[0].message.content
         }
     </script>
